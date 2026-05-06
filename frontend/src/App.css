@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Force transparent for glassmorphism to work */
+.App {
+  min-height: 100vh;
+  display: flex;
+  background: transparent;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Chakra UI overrides — prevent white background bleeding */
+[data-theme="dark"] body,
+body {
+  background-color: transparent !important;
+}
+
+/* Chakra color mode script injects bg on html — override it */
+html {
+  background-color: #0a0a0a !important;
+}
+
+/* Scrollbars — slim and dark */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Glassmorphism panel — the main floating container */
+.glass-panel {
+  background: rgba(15, 15, 18, 0.72) !important;
+  backdrop-filter: blur(28px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+  border-radius: 20px;
+  box-shadow:
+    0 40px 100px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255,255,255,0.04),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+/* Glassmorphism inner sections — ensure position is set for stacking */
+.glass-panel > * {
+  position: relative;
+}
