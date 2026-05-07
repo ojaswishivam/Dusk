@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import io from "socket.io-client";
 
-const END_POINT = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+const END_POINT = process.env.REACT_APP_BACKEND_URL || (process.env.NODE_ENV === "production" ? window.location.origin : "http://localhost:5000");
 const ChatContext = createContext();
 
 const ChatProvider = ({ children }) => {

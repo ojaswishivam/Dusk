@@ -86,4 +86,4 @@ Dusk is a premium, full-stack real-time chatting application built with the MERN
 This project is licensed under the ISC License.
 
 ---
-Built with ❤️ by [Ojaswi Shivam](https://github.com/ojaswishivam)
+Built by [Ojaswi Shivam](https://github.com/ojaswishivam)
