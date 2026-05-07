@@ -1,42 +1,89 @@
+# 🌌 Dusk
 
-**Chit-Chat is a Full Stack Chatting App. Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.**
+Dusk is a premium, full-stack real-time chatting application built with the MERN stack. Featuring a sleek **glassmorphism** design, it provides a seamless and visually stunning experience for instant communication.
 
-Tech Stack
-Client: React JS
+![Chat Page](assets/chat.jpg)
 
-Server: Node JS, Express JS
+## ✨ Features
 
-Database: Mongo DB
+- 🔐 **Secure Authentication**: JWT-based login and signup with bcrypt password encryption.
+- 💬 **Real-time Messaging**: Instant message delivery using Socket.io.
+- 👥 **Group Chats**: Create and manage groups, add/remove members, and update group details.
+- 🔍 **User Search**: Easily find and connect with other users.
+- 🖼️ **Image Support**: Share images and customize your profile.
+- 🔔 **Real-time Notifications**: Stay updated with message badges and alerts.
+- ✨ **Glassmorphism UI**: Beautifully designed interface using Chakra UI and Framer Motion.
+- ⌨️ **Typing Indicators**: See when someone is typing in real-time.
 
-Deployed on render.com
-https://chat-app-mern-7uyd.onrender.com/
+## 🛠️ Tech Stack
 
-**Homepage**
+**Frontend:**
+- [React.js](https://reactjs.org/) - UI Framework
+- [Chakra UI](https://chakra-ui.com/) - Component Library
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [Socket.io-client](https://socket.io/) - Real-time communication
 
-![Screenshot (2)](https://github.com/user-attachments/assets/ea14d82a-3ca4-4bdf-9a7e-9968d4dfd6ee)
+**Backend:**
+- [Node.js](https://nodejs.org/) - Runtime Environment
+- [Express.js](https://expressjs.com/) - Web Framework
+- [MongoDB](https://www.mongodb.com/) - Database
+- [Socket.io](https://socket.io/) - Real-time server logic
 
-**Chatpage**
+## 🚀 Getting Started
 
-![image](https://github.com/user-attachments/assets/d09afa37-261d-4bdc-8ccb-df4322f351ff)
+### Prerequisites
+- Node.js installed
+- MongoDB Atlas account or local MongoDB instance
 
-**Search User**
+### Installation
 
-![image](https://github.com/user-attachments/assets/bc878270-cc7b-4fc1-814b-a00d0d75e558)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ojaswishivam/Dusk.git
+   cd Dusk
+   ```
 
-**View profile**
+2. **Install Backend Dependencies:**
+   ```bash
+   npm install
+   ```
 
-![image](https://github.com/user-attachments/assets/b60c9bc1-c102-42f2-81d9-708d0a9bf092)
+3. **Install Frontend Dependencies:**
+   ```bash
+   cd frontend
+   npm install
+   ```
 
-**Create Group Chat**
+4. **Environment Setup:**
+   Create a `.env` file in the root directory and add the following:
+   ```env
+   PORT=5000
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   NODE_ENV=development
+   ```
 
-![image](https://github.com/user-attachments/assets/2a355ab5-0730-45cb-85c9-8e73a4410b45)
+5. **Run the Application:**
+   From the root directory:
+   ```bash
+   # Build frontend and start server
+   npm run build
+   npm start
+   ```
 
-**Update a group details**
+## 📸 Screenshots
 
-![image](https://github.com/user-attachments/assets/92521aae-7432-43b8-a9d2-9961c4901a11)
+### Authentication
+<div align="center">
+  <img src="assets/login.jpg" width="45%" />
+  <img src="assets/signup.jpg" width="45%" />
+</div>
 
+### Chat Interface
+![Chat Interface](assets/chat.jpg)
 
+## 📄 License
+This project is licensed under the ISC License.
 
-
-
-
+---
+Built with ❤️ by [Ojaswi Shivam](https://github.com/ojaswishivam)

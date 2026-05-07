@@ -18,7 +18,7 @@ const HomePage = () => {
         borderRadius="lg"
       >
         <Text fontSize="4xl" fontFamily="Work sans" color="black" align="center">
-          Chit-Chat
+          Dusk
         </Text>
 
       </Box>
